@@ -6,7 +6,10 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "dev": "vercel dev"   // This script will allow you to run the Vercel environment locally
+    "build": "npm run build && npm start",
+    "start": "vercel serve",
+    "stop": "pm2 stop sarkar",
+    "restart": "pm2 restart sarkar"
   },
   "author": "GiftedTech",
   "license": "GPL-3.0 license",
